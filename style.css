@@ -1,4 +1,4 @@
-/* Base Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +24,7 @@ html, body {
   padding: 0 1rem;
 }
 
-/* Common components */
+
 .title {
   font-family: 'Inter';
   font-size: 50px;
@@ -47,7 +47,7 @@ html, body {
   font-weight: 500;
 }
 
-/* Button styles */
+
 .btn {
   display: inline-block;
   padding: 10px 18px;
@@ -74,7 +74,6 @@ html, body {
   background-image: linear-gradient(90deg, #1e90ff, #00ff99);
 }
 
-/* Common components for read more links */
 .read-more a {
   font-family: 'Source Sans 3';
   font-size: 16px;
@@ -104,9 +103,7 @@ html, body {
   transform: translateX(4px);
 }
 
-/* Line styles */
 .hr-line {
-  /* border: 0.5px solid #b5f58c; */
   border-color: #b5f58c;
   opacity: 0.2;
   margin: 1rem 0;
@@ -132,7 +129,6 @@ html, body {
   padding-right: 1px;
 }
 
-/* Header and Navigation */
 .head-container {
   background-image: url('./images/Banner_desktop.jpg');
   background-size: cover;
@@ -154,7 +150,6 @@ html, body {
   z-index: 1;
 }
 
-/* Navigation */
 .navbar {
   z-index: 10;
   position: fixed;
@@ -253,26 +248,24 @@ html, body {
   transition: color 0.3s ease;
 }
 
-/* Gradient background layer */
 .navbar .nav-link::before {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,#b5f58c, #0059b2);
-  opacity: 0; /* default: transparent */
+  opacity: 0; 
   z-index: -1;
   border-radius: 6px;
   transition: opacity 0.3s ease;
 }
 
-/* Apply opacity 0.4 on hover, focus, and active */
+
 .navbar .nav-link:hover::before,
 .navbar .nav-link:focus::before,
 .navbar .nav-link.active::before {
   opacity: 0.4;
 }
 
-/* Set text color to blue during hover/focus/active */
 .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar .nav-link.active {
@@ -281,14 +274,10 @@ html, body {
   text-decoration: none;
 }
 
-
-
-
-/* New Mega Menu Styling */
 .mega-menu-panel {
   display: none;
   position: fixed;
-  top: 70px; /* Navbar height */
+  top: 70px; 
   left: 0;
   width: 100%;
   background-color: #003054;
@@ -297,7 +286,7 @@ html, body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
-  margin-top: 2rem; /* Adds space between navbar and mega menu */
+  margin-top: 2rem; 
 }
 
 .mega-menu-panel.show {
@@ -334,7 +323,6 @@ html, body {
 
 .menu-column ul li a {
   display: block;
-  /* padding: 6px 10px; */
   font-family: 'Source Sans 3', sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
   border-radius: 4px;
@@ -352,7 +340,6 @@ html, body {
   color: #c4c4c4 !important;
   text-decoration: none solid rgb(196, 196, 196);
 }
-
 
 .contact-us {
   color: #ffffff;
@@ -372,7 +359,6 @@ html, body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* height: 38px; */
 }
 
 .contact-us:hover {
@@ -380,7 +366,6 @@ html, body {
   background-image: linear-gradient(90deg, #1e90ff, #00ff99);
 }
 
-/* Hero Section */
 .hero {
   color: #ffffff;
   display: flex;
@@ -434,7 +419,6 @@ html, body {
   background-image: linear-gradient(90deg, #1e90ff, #00ff99);
 }
 
-/* Services Section */
 .services-section {
   width: 100%;
   max-width: 100%;
@@ -525,7 +509,6 @@ html, body {
   margin: 0 1.5rem;
 }
 
-/* Solutions Section */
 .solutions-section {
   border-radius: 10px;
   background-color: #141417;
@@ -552,10 +535,6 @@ html, body {
   align-items: center;
   transition: background-color 0.3s ease;
 }
-
-/* .solution-item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-} */
 
 .solution-text {
   display: flex;
@@ -633,7 +612,6 @@ html, body {
   transform: translateX(4px);
 }
 
-/* Who We Are Section */
 .who-we-are-section {
   width: 100%;
   max-width: 100%;
@@ -716,7 +694,6 @@ html, body {
   background-image: linear-gradient(90deg, #1e90ff, #00ff99);
 }
 
-/* Carousel Section */
 .carousel-section {
   width: 100%;
   max-width: 100%;
@@ -765,7 +742,6 @@ html, body {
   }
 }
 
-/* Testimonials Section */
 .testimonials-section {
   position: relative;
   width: 100%;
@@ -874,15 +850,10 @@ html, body {
   border: 2px solid #b5f58c;
 }
 
-/* Industries Section */
 .industries-section {
   box-sizing: border-box;
   padding: 3rem 0 2rem 0;
 }
-
-/* .industries-section .container{
-  margin-right: 0px;
-} */
 
 .industries-carousel {
   position: relative;
@@ -995,7 +966,6 @@ html, body {
   inset: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 40%),
     linear-gradient(to top, rgba(23, 37, 84, 1), transparent 100%);
-    
   z-index: 1;
   border-radius: 12px;
 }
@@ -1036,7 +1006,6 @@ html, body {
   z-index: 2;
 }
 
-/* Resources Section */
 .resources-section {
   width: 100%;
   padding: 5rem 0;
@@ -1059,7 +1028,7 @@ html, body {
   line-height: 30px;
   font-weight: 800 !important;
 }
-/* Get In Touch Section */
+
 .get-in-touch-section {
   width: 100%;
   max-width: 100%;
@@ -1118,7 +1087,6 @@ html, body {
   background-image: linear-gradient(90deg, #1e90ff, #00ff99);
 }
 
-/* Footer */
 .footer {
   width: 100%;
   max-width: 100%;
@@ -1253,7 +1221,6 @@ html, body {
   color: #ffffff;
 }
 
-/* Tablet (768px to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
@@ -1367,7 +1334,6 @@ html, body {
   }
 }
 
-/* Mobile (up to 767px) */
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 540px;
@@ -1503,7 +1469,6 @@ html, body {
     margin-top: 1rem;
   }
 
-  /* Navbar and Mega Menu Mobile */
   .navbar {
     padding: 0.75rem 0;
   }
@@ -1612,7 +1577,6 @@ html, body {
   }
 }
 
-/* Desktop (992px and above) - These are default styles, only add overrides if needed */
 @media only screen and (min-width: 992px) {
   .container {
     max-width: 1140px;

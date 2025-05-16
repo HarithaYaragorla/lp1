@@ -21,7 +21,6 @@
           <a class="navbar-brand" href="#">
             <img src="./images/logo-image.svg" alt="Logo" class="logo-image" />
             <img src="./images/proviniti.svg" alt="Proviniti" class="logo-text" />
-            <!-- <span class="logo-divider"></span> -->
             <img src="./images/Path.svg" alt="Divider" class="logo-divider"/>
             <img src="./images/Solutions.svg" alt="ServiceNow" class="logo-servicenow" />
           </a>
@@ -280,13 +279,11 @@
       <div class="industries-carousel">
       <div class="card-container" id="cardTrack">
         <div class="industries-card industries-card-1" style="background-image: url('./images/financial-services.png');">
-          <!-- <div class="card-content"> -->
           <h5>Financial Services</h5>
           <p>Proviniti's ServiceNow platform offers tailored, 
             cost-effective financial solutions, enhancing 
             visibility, compliance, wealth management, and insurance satisfaction. </p>
             <div class="read-more"><a href="#">Read more <span class="material-symbols-outlined">chevron_right</span></a></div>
-          <!-- </div> -->
         </div>
     
         <div class="industries-card industries-card-1" style="background-image: url('./images/telecom-industry.jpeg');">
@@ -390,9 +387,6 @@
         <img src="./images/shoprate.svg" alt="ShopRate" />
         <img src="./images/teladcc.svg" alt="Teladcc" />
         <img src="./images/pandg.svg" alt="P&G" />
-        
-        <!-- Duplicate for infinite effect -->
-        
       </div>
     </div>
   </div>
@@ -471,7 +465,6 @@
   <!-- Footer -->
   <div class="footer">
     <div class="container">
-    <!-- About -->
     <div class="footer-container">
     <div class="footer-column">
       <img src="./images/logo-image.svg" alt="Logo" class="logo"/>
@@ -586,7 +579,6 @@
         if (isMobile) {
           trigger.addEventListener('click', function (e) {
             e.preventDefault();
-            // Do nothing on mobile - effectively removing mega menu functionality
           });
         } else {
           trigger.addEventListener('mouseenter', function () {
@@ -629,11 +621,10 @@
         }
       });
   
-      // Re-initialize on resize to adapt behavior
       window.addEventListener('resize', function () {
         const newIsMobile = window.innerWidth < 768;
         if (newIsMobile !== isMobile) {
-          location.reload(); // Reload to rebind correct event type
+          location.reload();
         }
       });
   
